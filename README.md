@@ -1,8 +1,6 @@
 # ppc64le
 
-This README is a collection of notes I took while installing PyTorch and GPT-NeoX on ppc64le architecture (Lassen).  
-
-The following notes were provided by Eric Hallahan as a starting point (https://github.com/EleutherAI/gpt-neox/pull/456):  
+This README is a collection of notes I took while installing PyTorch and GPT-NeoX on ppc64le architecture (Lassen). Eric Hallahan provided me a really good summary of previous efforts that were made to get a stripped-down version of GPT-NeoX up and running. Most of these notes are cannibalized from his work (https://github.com/EleutherAI/gpt-neox/pull/456):  
 
 ## GPT-NeoX Requirements
 pybind11>=2.6.0  
