@@ -20,7 +20,7 @@ mpi4py
 
 ## Dependencies
 PyTorch --> Must install from source (hard) --> **DONE**  
-~~Triton --> Must install from source (easy) --> **IN PROGRESS**~~ **ABANDONED!** (recommendation from Stella Biderman)  
+~~Triton --> Must install from source (easy) --> **IN PROGRESS**~~ **ABANDONED!**  
 ~~Eigen~~  
 ~~DyNet --> Must install from source (hard)~~  
 ~~PyArrow~~  
