@@ -53,8 +53,28 @@ for instructions on how to install GCC 5 or higher.
 Error when running python deepy.py train.py -d configs small.yml local_setup.yml
 
 ```
+File "deepy.py", line 19, in <module>
+    import deepspeed
+  File "/usr/workspace/zywiec1/anaconda3/envs/opence_env/lib/python3.8/site-packages/deepspeed/__init__.py", line 9, in <module>
+    from .runtime.engine import DeepSpeedEngine
+  File "/usr/workspace/zywiec1/anaconda3/envs/opence_env/lib/python3.8/site-packages/deepspeed/runtime/engine.py", line 17, in <module>
+    from tensorboardX import SummaryWriter
+  File "/usr/workspace/zywiec1/anaconda3/envs/opence_env/lib/python3.8/site-packages/tensorboardX/__init__.py", line 5, in <module>
+    from .torchvis import TorchVis
+  File "/usr/workspace/zywiec1/anaconda3/envs/opence_env/lib/python3.8/site-packages/tensorboardX/torchvis.py", line 11, in <module>
+    from .writer import SummaryWriter
+  File "/usr/workspace/zywiec1/anaconda3/envs/opence_env/lib/python3.8/site-packages/tensorboardX/writer.py", line 18, in <module>
+    from .event_file_writer import EventFileWriter
+  File "/usr/workspace/zywiec1/anaconda3/envs/opence_env/lib/python3.8/site-packages/tensorboardX/event_file_writer.py", line 28, in <module>
+    from .proto import event_pb2
+  File "/usr/workspace/zywiec1/anaconda3/envs/opence_env/lib/python3.8/site-packages/tensorboardX/proto/event_pb2.py", line 7, in <module>
+    from google.protobuf import descriptor as _descriptor
+  File "/usr/workspace/zywiec1/anaconda3/envs/opence_env/lib/python3.8/site-packages/google/protobuf/descriptor.py", line 47, in <module>
+    from google.protobuf.pyext import _message
 AttributeError: module 'google.protobuf.internal.containers' has no attribute 'MutableMapping'
 ```
+
+The default version from OSU is protobuf 3.9.2, which throws a different error. The 'MutableMapping' error occurred when I upgraded to protobuf 3.19.1.
 
 ## Code Snippets
 Initial torch test shown below on one debug node
