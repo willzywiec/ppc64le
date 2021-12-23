@@ -19,6 +19,6 @@ lm_eval
 ## Dependencies
 PyTorch --> Must install from source (hard)  
 Triton --> Must install from source (easy)  
-Eigen
+Eigen  
 DyNet --> Must install from source (hard)  
 PyArrow  
