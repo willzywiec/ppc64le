@@ -32,7 +32,7 @@ PyTorch --> Must install from source (hard) --> **DONE**
 * I received the following error when downloading the Enron email corpus: ImportError: /usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/libstdc++.so.6: version `CXXABI_1.3.11' not found. This pointed toward gcc, so I poked around a bit and found that CUDA 11.2 was missing several files. This led to other permission-related software installation and dependency issues, so I ended up having to uninstall everything and rebuild PyTorch 1.7.1 (Python 3.8, CUDA 10.2) from an older mirror (https://ftp.osuosl.org/pub/open-ce/1.1.1/) to get things working.
 * TensorboardX appears to not be working...
 
-## Errors (In Progress)
+## Errors (Work In Progress)
 Error when running python megatron/fused_kernels/setup.py install
 
 ```
