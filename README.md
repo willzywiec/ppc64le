@@ -8,7 +8,7 @@ Eric Hallahan sent me a really good summary of previous efforts that were made t
 six  
 regex  
 numpy>=1.20.0  
-git+git://github.com/willzywiec/DeeperSpeed.git#egg=deepspeed (modified slightly)  
+git+git://github.com/willzywiec/DeeperSpeed.git#egg=deepspeed
 transformers>=4.5.0  
 tokenizers>=0.10.0  
 lm_dataformat>=0.0.19  
