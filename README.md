@@ -1,4 +1,4 @@
-# ppc64le
+# GPT-NeoX + ppc64le = ❤️
 
 This README is a collection of notes I took while installing PyTorch and GPT-NeoX on ppc64le architecture (Lassen).  
 
