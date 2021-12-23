@@ -1,5 +1,6 @@
-# Notes on installing PyTorch and GPT-NeoX on ppc64le architecture (Lassen)
+# ppc64le
 
+## Notes on installing PyTorch and GPT-NeoX on ppc64le architecture (Lassen)
 The following notes were provided by Eric Hallahan as a starting point (https://github.com/EleutherAI/gpt-neox/pull/456):  
 
 ## GPT-NeoX Requirements
