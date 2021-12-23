@@ -20,5 +20,5 @@ lm_eval
 PyTorch --> Must install from source (hard)  
 Triton --> Must install from source (easy)  
 Eigen
-DyNet --> Must install from source (hard)
-PyArrow
+DyNet --> Must install from source (hard)  
+PyArrow  
