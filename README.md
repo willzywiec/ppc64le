@@ -33,7 +33,7 @@ PyTorch --> Must install from source (hard) --> **DONE**
 * TensorboardX appears to not be working...
 
 ## Code Snippets
-Initial torch test shown below with one queued debug node.
+Initial torch test shown below on one debug node.
 
 ```
 Python 3.8.12 (default, Oct 12 2021, 13:02:29)
