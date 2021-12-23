@@ -18,7 +18,7 @@ lm_eval
 
 ## Dependencies
 PyTorch --> Must install from source (hard) --> **DONE**  
-Triton --> Must install from source (easy) --> ~~**IN PROGRESS**~~ **ABANDONED!** (thanks to Eric H. and Stella Biderman)
+Triton --> Must install from source (easy) --> ~~**IN PROGRESS**~~ **ABANDONED!** (thanks to Eric H. and Stella Biderman)  
 Eigen  
 DyNet --> Must install from source (hard)  
 PyArrow  
