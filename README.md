@@ -6,7 +6,7 @@ The following notes were provided by Eric Hallahan as a starting point (https://
 
 ## GPT-NeoX Requirements
 **pybind11**>=2.6.0  
-**six ** 
+**six**  
 **regex**  
 **numpy**>=1.20.0  
 **git+git://github.com/EleutherAI/DeeperSpeed.git@eb7f5cff36678625d23db8a8fe78b4a93e5d2c75#egg=deepspeed**  
