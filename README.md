@@ -12,6 +12,7 @@ numpy>=1.20.0
 git+git://github.com/EleutherAI/DeeperSpeed.git@eb7f5cff36678625d23db8a8fe78b4a93e5d2c75#egg=deepspeed  
 * PyTorch --> Must install from source (hard)  
 * Triton --> Must install from source (easy)  
+* 
 transformers>=4.5.0  
 tokenizers>=0.10.0  
 lm_dataformat>=0.0.19  
