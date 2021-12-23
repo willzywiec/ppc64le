@@ -32,6 +32,30 @@ PyTorch --> Must install from source (hard) --> **DONE**
 * I received the following error when downloading the Enron email corpus: ImportError: /usr/tce/packages/gcc/gcc-4.9.3/gnu/lib64/libstdc++.so.6: version `CXXABI_1.3.11' not found. This pointed toward gcc, so I poked around a bit and found that CUDA 11.2 was missing several files. This led to other permission-related software installation and dependency issues, so I ended up having to uninstall and rebuild PyTorch 1.7.1 (Python 3.8, CUDA 10.2) from an older mirror (https://ftp.osuosl.org/pub/open-ce/1.1.1/) to get things working.
 * TensorboardX appears to not be working...
 
+## Errors (In Progress)
+Error when running python megatron/fused_kernels/setup.py install
+
+```
+                               !! WARNING !!
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Your compiler (c++ 4.9.3) may be ABI-incompatible with PyTorch!
+Please use a compiler that is ABI-compatible with GCC 5.0 and above.
+See https://gcc.gnu.org/onlinedocs/libstdc++/manual/abi.html.
+
+See https://gist.github.com/goldsborough/d466f43e8ffc948ff92de7486c5216d6
+for instructions on how to install GCC 5 or higher.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+                              !! WARNING !!
+```
+
+Error when running python deepy.py train.py -d configs small.yml local_setup.yml
+
+```
+AttributeError: module 'google.protobuf.internal.containers' has no attribute 'MutableMapping'
+```
+
 ## Code Snippets
 Initial torch test shown below on one debug node
 
