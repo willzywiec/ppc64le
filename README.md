@@ -17,8 +17,8 @@ ftfy>=6.0.0
 lm_eval  
 
 ## Dependencies
-PyTorch --> Must install from source (hard)  
-Triton --> Must install from source (easy)  
+PyTorch --> Must install from source (hard) **DONE**  
+Triton --> Must install from source (easy) **IN PROGRESS**  
 Eigen  
 DyNet --> Must install from source (hard)  
 PyArrow  
