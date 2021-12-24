@@ -74,7 +74,52 @@ File "deepy.py", line 19, in <module>
 AttributeError: module 'google.protobuf.internal.containers' has no attribute 'MutableMapping'
 ```
 
-The default version from OSU is protobuf 3.9.2, which throws a different error. The 'MutableMapping' error occurred when I upgraded to protobuf 3.19.1.
+The default version from OSU is protobuf 3.9.2, which throws a different error. The 'MutableMapping' error occurred when I upgraded to protobuf 3.19.1. I went through and commented out tensorboardX and wandb import statements in megatron to temporarily fix these errors.
+
+Error when running python deepy.py train.py -d configs small.yml local_setup.yml
+
+```
+Traceback (most recent call last):
+  File "train.py", line 20, in <module>
+    from megatron.training import pretrain
+  File "/usr/WS1/zywiec1/gpt-neox/megatron/training.py", line 59, in <module>
+Traceback (most recent call last):
+  File "train.py", line 20, in <module>
+    from eval_tasks import run_eval_harness
+  File "/usr/WS1/zywiec1/gpt-neox/eval_tasks/__init__.py", line 1, in <module>
+    from megatron.training import pretrain
+  File "/usr/WS1/zywiec1/gpt-neox/megatron/training.py", line 59, in <module>
+Traceback (most recent call last):
+  File "train.py", line 20, in <module>
+    from .eval_adapter import EvalHarnessAdapter, run_eval_harness
+  File "/usr/WS1/zywiec1/gpt-neox/eval_tasks/eval_adapter.py", line 2, in <module>
+    from eval_tasks import run_eval_harness
+  File "/usr/WS1/zywiec1/gpt-neox/eval_tasks/__init__.py", line 1, in <module>
+    from megatron.training import pretrain
+  File "/usr/WS1/zywiec1/gpt-neox/megatron/training.py", line 59, in <module>
+Traceback (most recent call last):
+  File "train.py", line 20, in <module>
+    import best_download
+ModuleNotFoundError: No module named 'best_download'
+    from .eval_adapter import EvalHarnessAdapter, run_eval_harness
+  File "/usr/WS1/zywiec1/gpt-neox/eval_tasks/eval_adapter.py", line 2, in <module>
+    from eval_tasks import run_eval_harness
+  File "/usr/WS1/zywiec1/gpt-neox/eval_tasks/__init__.py", line 1, in <module>
+    from megatron.training import pretrain
+  File "/usr/WS1/zywiec1/gpt-neox/megatron/training.py", line 59, in <module>
+    import best_download
+ModuleNotFoundError:     No module named 'best_download'from .eval_adapter import EvalHarnessAdapter, run_eval_harness
+
+  File "/usr/WS1/zywiec1/gpt-neox/eval_tasks/eval_adapter.py", line 2, in <module>
+    from eval_tasks import run_eval_harness
+  File "/usr/WS1/zywiec1/gpt-neox/eval_tasks/__init__.py", line 1, in <module>
+    import best_download
+ModuleNotFoundError: No module named 'best_download'
+    from .eval_adapter import EvalHarnessAdapter, run_eval_harness
+  File "/usr/WS1/zywiec1/gpt-neox/eval_tasks/eval_adapter.py", line 2, in <module>
+    import best_download
+ModuleNotFoundError: No module named 'best_download'
+```
 
 ## Code Snippets
 Initial torch test shown below on one debug node
