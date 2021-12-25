@@ -33,7 +33,7 @@ PyTorch --> Must install from source (hard) --> **DONE**
 * TensorboardX and Weights & Biases also weren't working, so I went through and commented those out of Megatron.
 
 ## Errors (Work In Progress)
-Error when running python megatron/fused_kernels/setup.py install
+Error when running python megatron/fused_kernels/setup.py install. The system currently uses GCC 4.9.3, so I built a local version of GCC 8.5.0.
 
 ```
                                !! WARNING !!
@@ -50,7 +50,7 @@ for instructions on how to install GCC 5 or higher.
                               !! WARNING !!
 ```
 
-Error when running python deepy.py train.py -d configs small.yml local_setup.yml
+Error when running python deepy.py train.py -d configs small.yml local_setup.yml. TensorboardX and Weights & Biases issues...
 
 ```
 File "deepy.py", line 19, in <module>
@@ -74,9 +74,9 @@ File "deepy.py", line 19, in <module>
 AttributeError: module 'google.protobuf.internal.containers' has no attribute 'MutableMapping'
 ```
 
-The default version from OSU is protobuf 3.9.2, which throws a different error. The 'MutableMapping' error occurred when I upgraded to protobuf 3.19.1. I went through and commented out tensorboardX and wandb import statements in megatron to fix these errors.
+The default version from OSU is protobuf 3.9.2, which throws a different error. The 'MutableMapping' error occurred when I upgraded to protobuf 3.19.1. I went through and commented out tensorboardX and wandb import statements in the megatron folder to fix these errors.
 
-Error when running python deepy.py train.py -d configs small.yml local_setup.yml
+Error when running python deepy.py train.py -d configs small.yml local_setup.yml. Had to install best-download from conda-forge (note 'dash' and not 'underscore').
 
 ```
 Traceback (most recent call last):
