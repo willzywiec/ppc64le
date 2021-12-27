@@ -1,8 +1,10 @@
 # GPT-NeoX + ppc64le = ❤️
 
-This README is a collection of notes I took while installing PyTorch and GPT-NeoX on ppc64le architecture (Lassen).  
+This README is a collection of notes I took while installing GPT-NeoX on ppc64le architecture (Lassen).  
 
 Eric Hallahan sent me a really good summary of previous efforts that were made to get a stripped-down version of GPT-NeoX up and running on Summit. Most of this README has been cannibalized and grown from his work (https://github.com/EleutherAI/gpt-neox/pull/456).  
+
+12/25/2021 Update: GPT-NeoX is up and running. I'm going to post the results of some tests when I get a chance.
 
 ## GPT-NeoX Requirements
 six  
