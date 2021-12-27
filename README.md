@@ -35,7 +35,7 @@ PyTorch --> Must install from source (hard) --> **DONE**
 * TensorboardX and Weights & Biases also weren't working, so I went through and commented those out of Megatron.
 
 ## Errors (Work In Progress)
-Error when running python megatron/fused_kernels/setup.py install. The system currently uses GCC 4.9.3, so I built a local version of GCC 8.5.0 (GCC 11.X+ is too new for the current setup to work).
+Error when running python megatron/fused_kernels/setup.py install. The system currently uses GCC 4.9.3, so I built a local version of GCC 8.5.0. GCC 11.X+ is too new for the current setup to work.
 
 ```
                                !! WARNING !!
