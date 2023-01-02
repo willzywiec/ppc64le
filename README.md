@@ -82,7 +82,7 @@ AttributeError: module 'google.protobuf.internal.containers' has no attribute 'M
 
 The default protobuf from OSU is protobuf 3.9.2, which throws a different error. The 'MutableMapping' error occurred when I upgraded to protobuf 3.19.1. I went through and commented out tensorboardX and wandb import statements in the megatron folder files to fix these errors. Before I did that, I also combed through stackoverflow and tried every combination of libprotobuf and protobuf installations to see if there was a workable combination... There was not.
 
-Error when running python deepy.py train.py -d configs small.yml local_setup.yml. I had to install best-download from conda-forge (note 'dash' and not 'underscore') and do a little uninstall-reinstall dance with tokenizers and transformers packages.
+Error when running python deepy.py train.py -d configs small.yml local_setup.yml. I had to install best-download from conda-forge (note 'dash' and not 'underscore') and do a little uninstall-reinstall dance with the tokenizers and transformers packages.
 
 ```
 Traceback (most recent call last):
