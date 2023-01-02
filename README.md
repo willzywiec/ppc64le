@@ -4,7 +4,9 @@ This README is a collection of notes I took while installing GPT-NeoX on ppc64le
 
 Eric Hallahan sent me a really good summary of previous efforts that were made to get a stripped-down version of GPT-NeoX up and running on Summit. Most of this README has been cannibalized and grown from his work (https://github.com/EleutherAI/gpt-neox/pull/456).  
 
-**12/25/2021 Update:** GPT-NeoX is up and running. I'm going to update this README and post the results of some tests when I get a chance.
+**12/25/2021 Update:** GPT-NeoX is up and running.
+
+**1/2/2023 (Belated) Update:** I migrated these notes to a private repository and wrote a few diagnostic scripts to map and monitor HPC architecture and software, as it relates to running GPT-NeoX and other GPU-centric deep learning software packages. As of this writing, there are lots of issues with maintaining even basic functionality in HPC environments, so I decided to suspend further effort here in favor of contributing to the lively chats on other social messaging platforms.  
 
 ## GPT-NeoX Requirements
 six  
