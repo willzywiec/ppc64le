@@ -6,9 +6,7 @@ Eric Hallahan sent me a really good summary of previous efforts that were made t
 
 **12/25/2021 Update:** GPT-NeoX is up and running.
 
-**1/2/2023 (Belated) Update:** I migrated these notes to a private repository and wrote a few diagnostic scripts to map and monitor HPC architecture and software, as it relates to running GPT-NeoX and other GPU-centric deep learning software packages.  
-  
-As of this writing, there are lots of issues with maintaining even basic functionality in HPC environments, so I decided to suspend further effort here in favor of contributing to lively discussions on other social messaging platforms.  
+**1/2/2023 Update:** I migrated these notes to a private repository and wrote a few diagnostic scripts to map and monitor HPC architecture and software, as it relates to running GPT-NeoX and other GPU-centric deep learning software packages. As of this writing, there are lots of issues with maintaining even basic functionality in HPC environments, so I decided to suspend further effort here in favor of contributing to lively discussions on other social messaging platforms.  
 
 ## GPT-NeoX Requirements
 six  
